@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miaulove</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javaScript/script.js" defer></script>
+</head>
+<body>
+    <header class="barraSuperior">
+        <!-- Contiene el menú y la barra de búsqueda -->
+        <img src="./img/menu.png" alt="menu" class="iconoMenu">
+        <div class="busquedaContenedor">
+            <input type="search" placeholder="Buscar" class="barraBusqueda">
+            <button class="buscarBoton">
+                <img src="./img/buscar.png" alt="Buscar" class="iconoBuscar">
+            </button>
+        </div>
+    </header>
+    <div class="barraNavegacion">
+        <!-- Barra de navegación con opciones, botones de configuración, cerrar sesión y el footer -->
+        <nav>
+            <div class="logoMiaulove">
+                <h1><span class="miau">miau</span><span class="love">love</span></h1>
+                <img src="./img/logo.png" alt="logo" class="logo-imagen">
+            </div>
+            <ul>
+                <li>Inicio</li>
+                <li>Subir Imagen</li>
+                <li>Contacto</li>
+                <li>Favoritos</li>
+                <li>Recientes</li>
+            </ul>
+        </nav>
+        <div class="configuracionCerrarSesion">
+            <button class="botonConfiguracion">Configuración</button>
+            <button class="botonCerrarSesion">Cerrar Sesión</button>
+        </div>
+        <footer>
+            <p>Todos los derechos reservados miaulove ©</p>
+        </footer>
+    </div>
+    <main class="contenedor">
+        <!-- Contenido principal de la página -->
+        <h2>¡Únete y comparte tu amor por los <span class="gatitos">gatitos!</span></h2>
+        <div class="botonesCategorias">
+            <button class="botonCategoria">Gatitos</button>
+            <button class="botonCategoria">Juveniles</button>
+            <button class="botonCategoria">Adultos</button>
+        </div>
+        <div class="galeria">
+        <!-- Galería de publicaciones con imágenes y botones de like -->
+            <div class="publicacion">
+                <img src="./img/gato1.jpg" alt="Gato 1">
+                <div class="seccionLike">
+                    <span>1</span> 
+                    <button class="botonLike">
+                        <img src="./img/like.png" alt="like">
+                    </button>
+                </div>
+            </div>
+            <div class="publicacion">
+                <img src="./img/gato2.jpg" alt="Gato 2">
+                <div class="seccionLike">
+                    <span>2</span> 
+                    <button class="botonLike">
+                        <img src="./img/like.png" alt="like">
+                    </button>
+                </div>
+            </div>
+            <div class="publicacion">
+                <img src="./img/gato3.png" alt="Gato 3">
+                <div class="seccionLike">
+                    <span>4</span> 
+                    <button class="botonLike">
+                        <img src="./img/like.png" alt="like">
+                    </button>
+                </div>
+            </div>
+            <div class="publicacion">
+                <img src="./img/gato4.png" alt="Gato 4">
+                <div class="seccionLike">
+                    <span>8</span> 
+                    <button class="botonLike">
+                        <img src="./img/like.png" alt="like">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

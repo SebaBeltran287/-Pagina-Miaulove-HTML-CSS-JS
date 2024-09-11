@@ -1,0 +1,233 @@
+/* Aplica un reset para eliminar márgenes y padding, letra similar al video escogí Arial */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* La barra superior con un diseño flexible, espaciando los elementos y aplicando un color de fondo */
+.barraSuperior {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d48db8;
+    padding: 10px 20px;
+}
+
+/* Estilo para el icono de menú, con tamaño y márgenes específicos */
+.iconoMenu {
+    width: 20px;
+    height: 20px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de búsqueda con alineación central en los elementos */
+.busquedaContenedor {
+    display: flex;
+    align-items: center;
+}
+
+/* La barra de búsqueda, tamaño de letra, que sea sin borde y con padding */
+.barraBusqueda {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Botón de búsqueda con tamaño fijo y color de fondo */
+.buscarBoton {
+    background-color: purple;
+    border: none;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+
+/* Tamaño del ícono de buscar */
+.iconoBuscar {
+    width: 24px;
+    height: 24px;
+}
+
+/* Barra de navegación fija al lado izquierdo, con un borde derecho */
+.barraNavegacion {
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: solid black;
+    border-width: 1px;
+}
+
+/* Estilos para el título principal */
+h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Cambia el color del texto miau a negro */
+.miau {
+    color: black;
+}
+
+/* Cambiar color de parte de texto love */
+.love {
+    color: #d48db8;
+}
+
+/* Logo centrado dentro de la clase "logoMiaulove", con margen superior */
+.logoMiaulove {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Defino el tamaño y margen inferior del título dentro del logo */
+.logoMiaulove h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Alineación y margen para la lista de navegación dentro de la barra */
+.barraNavegacion nav ul {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Defino el padding y tamaño de fuente para los ítems de la lista en la barra de navegación */
+.barraNavegacion nav ul li {
+    padding: 10px 0;
+    font-size: 15px;    
+    color: black;
+}
+
+/* Estilo para los botones de configuración y cierre de sesión */
+.configuracionCerrarSesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Estilos al boton de configuración */
+.botonConfiguracion {
+    background-color: #d48db8;
+    color: black;
+    border: none;
+    margin: 5px;
+    padding: 6px 6px;
+}
+
+/* Estilos para el boton de cerrar sesión */
+.botonCerrarSesion {
+    background-color: rgb(85, 8, 85);
+    color: white;
+    border: none;
+    margin: 5px;
+    padding: 6px 6px;
+}
+
+/* Estilo para el footer, posicionado en la parte inferior de la página */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    margin-left: 20px;
+}
+
+/* Contenedor principal con margen izquierdo para evitar superposición con la barra de navegación */
+.contenedor {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Estilo de los títulos dentro del contenedor, le agregue padding para centrarlo más */
+.contenedor h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Fuente en negrita para el texto del título "gatitos" */
+.gatitos{
+    font-weight: bolder;
+}
+
+/* Botones de categorías centrados, con separación entre ellos */
+.botonesCategorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Botones de categoría con fondo rosado y bordes redondeados */
+.botonCategoria {
+    background-color: #d48db8;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+/* Galería con un diseño flexible que permite múltiples filas de publicaciones */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cada publicación tiene un ancho fijo y está centrada */
+.publicacion {
+    width: 230px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Las imágenes de las publicaciones ocupan todo el ancho de su contenedor */
+.publicacion img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para la sección de "likes", con borde y bordes redondeados */
+.seccionLike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(173, 158, 158);
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+/* Botón de "like" sin fondo ni borde, con padding ajustado */
+.botonLike {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 8px;
+}
+
+/* El número de likes tiene un orden de visualización específico */
+.seccionLike span {
+    order: 1;
+}
+
+/* Estilo para los botones seleccionados del codigo JavaScript*/
+.botonSeleccionado {
+    background-color: rgb(71, 27, 71);
+}
